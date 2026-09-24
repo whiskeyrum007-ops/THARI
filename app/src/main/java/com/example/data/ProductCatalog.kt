@@ -1,0 +1,242 @@
+package com.example.data
+
+import com.example.data.model.CategoryItem
+import com.example.data.model.Product
+
+object ProductCatalog {
+
+    val categories = listOf(
+        CategoryItem("all", "All Footwear", "Complete Royal Heritage", "all"),
+        CategoryItem("men", "Men's Mojaris", "Handcrafted Khussa & Royal Shoes", "mojari"),
+        CategoryItem("women", "Women's Juttis", "Dabka, Zari & Pearl Needlework", "jutti"),
+        CategoryItem("bridal", "Bridal & Festive", "Opulent Velvet & Moti Work", "festive"),
+        CategoryItem("comfort", "Daily Comforts", "Bite-Free Leather Slip-ons", "comfort")
+    )
+
+    val products = listOf(
+        Product(
+            id = "dr-01",
+            name = "Royal Jodhpuri Gold Zari Mojari",
+            subtitle = "Authentic pointed toe traditional Mojari with metallic gold threadwork",
+            category = "Men's Mojaris",
+            type = "Mojari",
+            gender = "Men",
+            price = 2499,
+            originalPrice = 3999,
+            rating = 4.9f,
+            reviewCount = 342,
+            tag = "Royal Heritage",
+            artisanLocation = "Jodhpur Old City, Rajasthan",
+            soleMaterial = "Double-layered buff leather with bite-free memory foam padding",
+            upperMaterial = "Crimson raw silk base with pure hand-laid gold Zari thread",
+            color = "Royal Gold & Maroon",
+            availableSizes = listOf(6, 7, 8, 9, 10, 11),
+            description = "Crafted by 4th-generation Mojari karigars in the historic lanes of Jodhpur. Designed with the signature curved 'Nok' toe and hand-stitched with waxed linen threads. Features our trademark dual-density bite-free cushioning, eliminating the traditional shoe bite.",
+            features = listOf(
+                "Signature royal curved 'Nok' toe",
+                "Pure metallic gold Zari embroidery",
+                "Dual-density bite-free cushioned footbed",
+                "Vegetable-tanned buffalo leather sole",
+                "Hand-buffed natural beeswax finish"
+            ),
+            careInstructions = "Do not submerge in water. After wearing, air out in shade and store in the complimentary Dharti Rajasthan muslin dust bag. Apply natural leather cream once every 3 months.",
+            badge = "Royal Bestseller"
+        ),
+        Product(
+            id = "dr-02",
+            name = "Maharani Velvet Dabka & Pearl Jutti",
+            subtitle = "Deep wine velvet handcrafted with intricate antique Dabka & river pearls",
+            category = "Women's Juttis",
+            type = "Jutti",
+            gender = "Women",
+            price = 2899,
+            originalPrice = 4599,
+            rating = 4.95f,
+            reviewCount = 512,
+            tag = "Bridal Pick",
+            artisanLocation = "Johari Bazaar, Jaipur, Rajasthan",
+            soleMaterial = "100% soft cow leather sole with 5mm ortho-cushioning",
+            upperMaterial = "Micro-velvet in deep crimson maroon with hand-beaded moti & dabka",
+            color = "Deep Crimson/Maroon",
+            availableSizes = listOf(5, 6, 7, 8, 9, 10),
+            description = "Fit for royal celebrations and weddings. Each pair requires over 28 hours of meticulous needlework by master artisans in Jaipur. Cushioned with our innovative cloud-soft footbed so you can dance all night without aching soles.",
+            features = listOf(
+                "Hand-embroidered antique gold Dabka work",
+                "Genuine freshwater simulated pearl accents",
+                "Triple-padded bite-proof heel & arch",
+                "Slip-resistant treated leather sole",
+                "Gentle contoured curved edges"
+            ),
+            careInstructions = "Dry clean upper fabric only. Avoid damp environments. Keep wrapped in butter paper and muslin bag provided in the box.",
+            badge = "Bridal Choice"
+        ),
+        Product(
+            id = "dr-03",
+            name = "Royal Marwar Braided Leather Kolhapuri",
+            subtitle = "Tan genuine full-grain leather with traditional central braid & tassel",
+            category = "Men's Mojaris",
+            type = "Kolhapuri",
+            gender = "Men",
+            price = 1999,
+            originalPrice = 2999,
+            rating = 4.85f,
+            reviewCount = 219,
+            tag = "Handcrafted",
+            artisanLocation = "Barmer Border Artisans, Rajasthan",
+            soleMaterial = "Double vegetable-tanned thick sole with hand-punched grip grooves",
+            upperMaterial = "Full-grain saddle tan leather hand-braided with goat rawhide",
+            color = "Tan Brown",
+            availableSizes = listOf(6, 7, 8, 9, 10, 11),
+            description = "The timeless rustic Indian sandal re-imagined with regal Marwari finesse. The rawhide cords are hand-stretched and conditioned with mustard oil, yielding an exceptionally supple fit that molds to your unique foot arch over time.",
+            features = listOf(
+                "100% Full-grain uncorrected buff leather",
+                "Hand-braided center plait with classic pompoms",
+                "Oil-conditioned supple straps",
+                "Heavy-duty hand-stitched welt",
+                "Naturally breathes and conforms to feet"
+            ),
+            careInstructions = "Apply coconut or mustard oil sparingly on straps once a month to retain softness. Store in a dry ventilated space.",
+            badge = "Heritage Icon"
+        ),
+        Product(
+            id = "dr-04",
+            name = "Gulabi Nagra Floral Thread Jutti",
+            subtitle = "Pastel blush silk embroidered with colorful Resham threads & mirrors",
+            category = "Daily Comforts",
+            type = "Jutti",
+            gender = "Women",
+            price = 1799,
+            originalPrice = 2499,
+            rating = 4.8f,
+            reviewCount = 184,
+            tag = "Daily Comfort",
+            artisanLocation = "Sanganer, Jaipur, Rajasthan",
+            soleMaterial = "Flexible soft-leather sole with memory foam insole",
+            upperMaterial = "Raw tussar silk with vibrant floral resham embroidery and mirror-foil",
+            color = "Warm Off-White & Pastel",
+            availableSizes = listOf(6, 7, 8, 9, 10),
+            description = "A versatile everyday beauty inspired by the pink bougainvilleas of Jaipur courtyards. Featherlight and built with super-padded insoles, it transitions effortlessly from office ethnic days to weekend family brunches.",
+            features = listOf(
+                "Lightweight flexible sole",
+                "Colorfast Resham silk thread embroidery",
+                "Mirrored foil detailing",
+                "All-day bite-free memory foam padding",
+                "Zero break-in period required"
+            ),
+            careInstructions = "Wipe with slightly damp cloth. Avoid submerging in water.",
+            badge = "Popular"
+        ),
+        Product(
+            id = "dr-05",
+            name = "Maharaja Emerald Zardozi Sherwani Khussa",
+            subtitle = "Rich forest green velvet with heavy bullion gold embroidery",
+            category = "Bridal & Festive",
+            type = "Mojari",
+            gender = "Men",
+            price = 3299,
+            originalPrice = 5200,
+            rating = 4.98f,
+            reviewCount = 143,
+            tag = "Royal Heritage",
+            artisanLocation = "Udaipur Royal Court Artisans, Rajasthan",
+            soleMaterial = "Reinforced buff leather with brass heel studs & cushion",
+            upperMaterial = "Royal emerald micro-velvet with 3D Zardozi and metal wire accents",
+            color = "Emerald Green & Gold",
+            availableSizes = listOf(7, 8, 9, 10, 11),
+            description = "The quintessential footwear for grooms, festive soirees, and royal gatherings. Inspired by royal miniature paintings from Mewar. Meticulously handcrafted by master artisans using generations-old wire-spinning techniques.",
+            features = listOf(
+                "Heavy 3D Zardozi metal relief embroidery",
+                "Intricate peacock & floral vine motifs",
+                "Ergonomic arch reinforcement",
+                "Signature curled front nok",
+                "Includes complimentary silk dust bag"
+            ),
+            careInstructions = "Professional dry cleaning for fabric upper only. Store in wooden box or dust bag provided.",
+            badge = "Festive Top Pick"
+        ),
+        Product(
+            id = "dr-06",
+            name = "Bikaner Desert Hand-Embossed Leather Loafer",
+            subtitle = "Hand-tooled genuine camel-colored leather slip-on with cushioned inner",
+            category = "Daily Comforts",
+            type = "Slip-on",
+            gender = "Men",
+            price = 2199,
+            originalPrice = 3299,
+            rating = 4.75f,
+            reviewCount = 196,
+            tag = "Handcrafted",
+            artisanLocation = "Bikaner Craft Cluster, Rajasthan",
+            soleMaterial = "Flexible anti-skid rubberized leather sole",
+            upperMaterial = "Hand-stamped full-grain leather with floral medallion motif",
+            color = "Tan Brown",
+            availableSizes = listOf(6, 7, 8, 9, 10, 11),
+            description = "A sophisticated fusion of Rajasthani hand-tooling with the convenience of modern slip-on comfort. Crafted from premium leather that develops an exquisite natural patina as it ages.",
+            features = listOf(
+                "Hand-embossed traditional medallion patterns",
+                "Side elasticated stretch inserts for easy slip-on",
+                "Breathable perforated leather lining",
+                "Anti-slip grooved sole",
+                "Ultra-cushioned shock-absorbing heel"
+            ),
+            careInstructions = "Clean with soft leather brush. Apply neutral leather wax or cream.",
+            badge = "New Arrival"
+        ),
+        Product(
+            id = "dr-07",
+            name = "Jaipur Kundan & Gota Patti Festive Jutti",
+            subtitle = "Mustard gold raw silk with radiant gota ribbons and kundan stones",
+            category = "Bridal & Festive",
+            type = "Jutti",
+            gender = "Women",
+            price = 2699,
+            originalPrice = 4199,
+            rating = 4.92f,
+            reviewCount = 277,
+            tag = "Bridal Pick",
+            artisanLocation = "Johari Bazaar, Jaipur, Rajasthan",
+            soleMaterial = "Supple leather sole with extra heel cushioning",
+            upperMaterial = "Pure silk with authentic Jaipur Gota Patti work & Kundan crystals",
+            color = "Royal Gold",
+            availableSizes = listOf(5, 6, 7, 8, 9, 10),
+            description = "Gota Patti is the celebrated needlecraft of royalty in Jaipur. Paired with sparkling Kundan stones, this jutti is designed to shimmer gracefully under wedding lights without feeling heavy on feet.",
+            features = listOf(
+                "Authentic handcrafted Gota Patti ribbon work",
+                "Hand-encrusted lead-free Kundan crystals",
+                "Double-cushioned bite-free comfort layer",
+                "Smooth suede interior lining",
+                "Lightweight ergonomic silhouette"
+            ),
+            careInstructions = "Spot clean only. Store in protective sleeve provided to protect stones.",
+            badge = "Trending"
+        ),
+        Product(
+            id = "dr-08",
+            name = "Shekhawati Hand-Painted Peacock Jutti",
+            subtitle = "Midnight black genuine leather featuring hand-painted gold & royal blue peacocks",
+            category = "Women's Juttis",
+            type = "Jutti",
+            gender = "Women",
+            price = 2299,
+            originalPrice = 3499,
+            rating = 4.88f,
+            reviewCount = 163,
+            tag = "Artisan Pick",
+            artisanLocation = "Mandawa, Shekhawati, Rajasthan",
+            soleMaterial = "Buff leather sole with soft insole padding",
+            upperMaterial = "Black genuine nappa leather with water-resistant miniature mural paint",
+            color = "Midnight Black",
+            availableSizes = listOf(6, 7, 8, 9, 10),
+            description = "Celebrates the fresco mural traditions of Shekhawati havelis. Each peacock motif is hand-painted by folk miniature artists using natural-pigment based permanent lacquers with gold dust accents.",
+            features = listOf(
+                "Individually hand-painted miniature art",
+                "Water-resistant sealed lacquer finish",
+                "Supple nappa leather upper",
+                "Reinforced bite-free collar",
+                "Handcrafted in small artisan batches"
+            ),
+            careInstructions = "Wipe with dry microfibre cloth. Do not use chemical solvents on painted surface.",
+            badge = "Limited Batch"
+        )
+    )
+}

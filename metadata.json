@@ -1,0 +1,8 @@
+{
+  "name": "Remix Dharti Rajasthan",
+  "description": "Authentic handcrafted Rajasthani footwear - Mojaris, Juttis \u0026 Kolhapuris with persistent wishlist and checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
